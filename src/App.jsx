@@ -1,9 +1,21 @@
+import { Routes, Route } from 'react-router-dom'
+import Nav from './components/Nav'
+import Home from './pages/Home'
+import Menu from './pages/Menu'
+import About from './pages/About'
+
 function App() {
   return (
-    <main className="container page">
-      <h1>Ember &amp; Oak</h1>
-      <p>Café and bakery. Our new website is on its way.</p>
-    </main>
+    <>
+      <Nav />
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/menu" element={<Menu />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </main>
+    </>
   )
 }
 
