@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom'
 import Nav from './components/Nav'
+import Footer from './components/Footer'
 import Home from './pages/Home'
 import Menu from './pages/Menu'
 import About from './pages/About'
@@ -15,6 +16,7 @@ function App() {
           <Route path="/about" element={<About />} />
         </Routes>
       </main>
+      <Footer />
     </>
   )
 }
