@@ -1,0 +1,17 @@
+.hero {
+  background: linear-gradient(135deg, #f3e6d3 0%, #e7cfb0 100%);
+  padding: 5.5rem 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: clamp(2.1rem, 5vw, 3.4rem);
+  margin: 0 0 1rem;
+}
+
+.hero .tagline {
+  font-size: 1.2rem;
+  color: var(--color-muted);
+  max-width: 36rem;
+  margin: 0 auto 2rem;
+}

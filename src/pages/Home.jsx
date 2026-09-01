@@ -1,9 +1,21 @@
+import { Link } from 'react-router-dom'
+import './Home.css'
+
 function Home() {
   return (
-    <div className="container page">
-      <h1>Welcome to Ember &amp; Oak</h1>
-      <p>Fresh coffee and bread baked every morning.</p>
-    </div>
+    <>
+      <section className="hero">
+        <div className="container hero-inner">
+          <h1>Coffee, bread and good company</h1>
+          <p className="tagline">
+            Small-batch coffee and pastries baked fresh every morning in the heart of Millbrook.
+          </p>
+          <Link to="/menu" className="button">
+            View Menu
+          </Link>
+        </div>
+      </section>
+    </>
   )
 }
 
