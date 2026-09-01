@@ -65,3 +65,15 @@ a {
   background: var(--color-primary-dark);
   border-color: var(--color-primary-dark);
 }
+
+.lead {
+  font-size: 1.15rem;
+  color: var(--color-muted);
+  max-width: 42rem;
+}
+
+.price {
+  font-weight: 700;
+  color: var(--color-primary);
+  white-space: nowrap;
+}
