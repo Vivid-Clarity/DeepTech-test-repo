@@ -1,0 +1,60 @@
+.about-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.about-story h2,
+.about-info h2 {
+  font-size: 1.4rem;
+  margin: 0 0 0.75rem;
+}
+
+.about-story p {
+  margin: 0 0 1rem;
+}
+
+.about-info {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+}
+
+.about-info h2:not(:first-child) {
+  margin-top: 1.5rem;
+}
+
+.about-info address {
+  font-style: normal;
+}
+
+.about-info p {
+  color: var(--color-muted);
+  font-size: 0.95rem;
+  margin: 0.75rem 0 0;
+}
+
+.hours-list {
+  margin: 0;
+}
+
+.hours-list div {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.3rem 0;
+  border-bottom: 1px dashed var(--color-border);
+}
+
+.hours-list dd {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
