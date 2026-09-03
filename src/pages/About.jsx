@@ -15,7 +15,7 @@ function About() {
           </p>
           <p>
             Every loaf and pastry is baked on site before sunrise, and our coffee is roasted in small
-            batches by a roaster two streets away. We beleive a good café should feel like a second
+            batches by a roaster two streets away. We believe a good café should feel like a second
             kitchen: somewhere to linger, catch up with friends, or enjoy a quiet moment on your own.
           </p>
           <p>

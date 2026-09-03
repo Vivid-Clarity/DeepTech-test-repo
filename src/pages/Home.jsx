@@ -10,9 +10,9 @@ function Home() {
     <>
       <section className="hero">
         <div className="container hero-inner">
-          <h1>Coffee, bread and good company</h1>
+          <h1>Baked fresh, poured with care</h1>
           <p className="tagline">
-            Small-batch coffee and pastries baked fresh every morning in the heart of Millbrook.
+            Your neighbourhood café on Kiln Lane, serving wood-fired pastries, seasonal breakfasts and specialty coffee seven days a week.
           </p>
           <Link to="/menu" className="button">
             View Menu
