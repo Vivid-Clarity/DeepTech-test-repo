@@ -2,7 +2,7 @@ import { useState } from 'react'
 import FormField from '../components/FormField'
 import './Contact.css'
 
-const emptyForm = { name: '', email: '', message: '' }
+const emptyForm = { name: '', email: '', phone: '', message: '' }
 
 function validate(values) {
   const errors = {}
@@ -13,6 +13,9 @@ function validate(values) {
     errors.email = 'Please enter your email address.'
   } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(values.email.trim())) {
     errors.email = 'Please enter a valid email address, like name@example.com.'
+  }
+  if (values.phone.trim() && !/^[0-9+()\s-]{8,20}$/.test(values.phone.trim())) {
+    errors.phone = 'Please enter a valid phone number, or leave this field blank.'
   }
   if (!values.message.trim()) {
     errors.message = 'Please enter a message.'
@@ -81,6 +84,17 @@ function Contact() {
             value={values.email}
             onChange={handleChange}
             error={errors.email}
+          />
+          <FormField
+            id="contact-phone"
+            name="phone"
+            type="tel"
+            label="Phone"
+            optional
+            autoComplete="tel"
+            value={values.phone}
+            onChange={handleChange}
+            error={errors.phone}
           />
           <FormField
             id="contact-message"
