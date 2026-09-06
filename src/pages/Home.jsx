@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import Card from '../components/Card'
 import menu from '../data/menu.json'
 import { formatPrice } from '../utils/formatPrice'
 import './Home.css'
@@ -24,13 +25,9 @@ function Home() {
         <h2>Customer favourites</h2>
         <div className="featured-grid">
           {featured.map((item) => (
-            <article key={item.id} className="featured-item">
-              <div className="featured-item-header">
-                <h3>{item.name}</h3>
-                <span className="price">{formatPrice(item.price)}</span>
-              </div>
-              <p>{item.description}</p>
-            </article>
+            <Card key={item.id} title={item.name} price={formatPrice(item.price)}>
+              {item.description}
+            </Card>
           ))}
         </div>
       </section>

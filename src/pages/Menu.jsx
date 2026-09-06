@@ -1,3 +1,4 @@
+import Card from '../components/Card'
 import menu from '../data/menu.json'
 import { formatPrice } from '../utils/formatPrice'
 import './Menu.css'
@@ -19,13 +20,9 @@ function Menu() {
             {menu
               .filter((item) => item.category === category)
               .map((item) => (
-                <article key={item.id} className="menu-item">
-                  <div className="menu-item-header">
-                    <h3>{item.name}</h3>
-                    <span className="price">{formatPrice(item.price)}</span>
-                  </div>
-                  <p>{item.description}</p>
-                </article>
+                <Card key={item.id} title={item.name} price={formatPrice(item.price)}>
+                  {item.description}
+                </Card>
               ))}
           </div>
         </section>
