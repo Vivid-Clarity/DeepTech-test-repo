@@ -1,16 +1,103 @@
 [
-  { "id": "espresso", "name": "Espresso", "description": "A double shot of our house blend, rich and chocolatey.", "price": 3.5, "category": "Coffee" },
-  { "id": "flat-white", "name": "Flat White", "description": "Silky steamed milk over a double ristretto.", "price": 4.8, "category": "Coffee" },
-  { "id": "oat-latte", "name": "Oat Latte", "description": "Our house blend with creamy oat milk.", "price": 5.2, "category": "Coffee" },
-  { "id": "cold-brew", "name": "Cold Brew", "description": "Steeped for 18 hours and served over ice.", "price": 5.0, "category": "Coffee" },
-  { "id": "croissant", "name": "Butter Croissant", "description": "Flaky, golden and laminated by hand every morning.", "price": 4.5, "category": "Pastries", "featured": true },
-  { "id": "cinnamon-scroll", "name": "Cinnamon Scroll", "description": "Soft brioche dough rolled with brown sugar and cinnamon.", "price": 5.0, "category": "Pastries" },
-  { "id": "almond-danish", "name": "Almond Danish", "description": "Almond frangipane and toasted flaked almonds.", "price": 5.5, "category": "Pastries" },
-  { "id": "fruit-tart", "name": "Seasonal Fruit Tart", "description": "Vanilla custard and whatever fruit is best this week.", "price": 6.5, "category": "Pastries" },
-  { "id": "avocado-toast", "name": "Smashed Avocado", "description": "On wood-fired sourdough with feta, lemon and chilli.", "price": 16.5, "category": "Breakfast", "featured": true },
-  { "id": "bircher", "name": "Bircher Muesli", "description": "Oats soaked overnight with apple, yoghurt and berries.", "price": 12.0, "category": "Breakfast" },
-  { "id": "big-breakfast", "name": "Ember Breakfast Plate", "description": "Eggs your way, bacon, mushrooms, tomato and toast.", "price": 22.0, "category": "Breakfast" },
-  { "id": "pumpkin-salad", "name": "Roast Pumpkin Salad", "description": "Pumpkin, spinach, lentils, pepitas and tahini dressing.", "price": 17.0, "category": "Lunch" },
-  { "id": "pork-toastie", "name": "Pulled Pork Toastie", "description": "Slow-cooked pork, pickled slaw and cheddar on sourdough.", "price": 15.5, "category": "Lunch", "featured": true },
-  { "id": "soup", "name": "Soup of the Day", "description": "Ask at the counter. Served with a thick slice of bread.", "price": 13.0, "category": "Lunch" }
+  {
+    "id": "espresso",
+    "name": "Espresso",
+    "description": "A double shot of our house blend, rich and chocolatey.",
+    "price": 3.5,
+    "category": "Coffee"
+  },
+  {
+    "id": "flat-white",
+    "name": "Flat White",
+    "description": "Silky steamed milk over a double ristretto.",
+    "price": 4.8,
+    "category": "Coffee"
+  },
+  {
+    "id": "oat-latte",
+    "name": "Oat Latte",
+    "description": "Our house blend with creamy oat milk.",
+    "price": 5.2,
+    "category": "Coffee"
+  },
+  {
+    "id": "cold-brew",
+    "name": "Cold Brew",
+    "description": "Steeped for 18 hours and served over ice.",
+    "price": 5.0,
+    "category": "Coffee"
+  },
+  {
+    "id": "croissant",
+    "name": "Butter Croissant",
+    "description": "Flaky, golden and laminated by hand every morning.",
+    "price": 4.5,
+    "category": "Pastries",
+    "featured": true
+  },
+  {
+    "id": "cinnamon-scroll",
+    "name": "Cinnamon Scroll",
+    "description": "Soft brioche dough rolled with brown sugar and cinnamon.",
+    "price": 5.0,
+    "category": "Pastries"
+  },
+  {
+    "id": "almond-danish",
+    "name": "Almond Danish",
+    "description": "Almond frangipane and toasted flaked almonds.",
+    "price": 5.5,
+    "category": "Pastries"
+  },
+  {
+    "id": "fruit-tart",
+    "name": "Seasonal Fruit Tart",
+    "description": "Vanilla custard and whatever fruit is best this week.",
+    "price": 6.5,
+    "category": "Pastries"
+  },
+  {
+    "id": "avocado-toast",
+    "name": "Smashed Avocado",
+    "description": "On wood-fired sourdough with feta, lemon and chilli.",
+    "price": 16.5,
+    "category": "Breakfast",
+    "featured": true
+  },
+  {
+    "id": "bircher",
+    "name": "Bircher Muesli",
+    "description": "Oats soaked overnight with apple, yoghurt and berries.",
+    "price": 12.0,
+    "category": "Breakfast"
+  },
+  {
+    "id": "big-breakfast",
+    "name": "Ember Breakfast Plate",
+    "description": "Eggs your way, bacon, mushrooms, tomato and toast.",
+    "price": 22.0,
+    "category": "Breakfast"
+  },
+  {
+    "id": "pumpkin-salad",
+    "name": "Roast Pumpkin Salad",
+    "description": "Pumpkin, spinach, lentils, pepitas and tahini dressing.",
+    "price": 17.0,
+    "category": "Lunch"
+  },
+  {
+    "id": "pork-toastie",
+    "name": "Pulled Pork Toastie",
+    "description": "Slow-cooked pork, pickled slaw and cheddar on sourdough.",
+    "price": 15.5,
+    "category": "Lunch",
+    "featured": true
+  },
+  {
+    "id": "soup",
+    "name": "Soup of the Day",
+    "description": "Ask at the counter. Served with a thick slice of bread.",
+    "price": 13.0,
+    "category": "Lunch"
+  }
 ]

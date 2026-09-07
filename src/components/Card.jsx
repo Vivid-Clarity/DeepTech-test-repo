@@ -1,4 +1,4 @@
-import './Card.css'
+import './Card.css';
 
 function Card({ title, price, children }) {
   return (
@@ -9,7 +9,7 @@ function Card({ title, price, children }) {
       </div>
       <p>{children}</p>
     </article>
-  )
+  );
 }
 
-export default Card
+export default Card;

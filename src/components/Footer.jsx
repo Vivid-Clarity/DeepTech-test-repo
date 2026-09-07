@@ -1,5 +1,5 @@
-import { business } from '../data/business'
-import './Footer.css'
+import { business } from '../data/business';
+import './Footer.css';
 
 function Footer() {
   return (
@@ -26,10 +26,12 @@ function Footer() {
         </div>
       </div>
       <div className="container footer-bottom">
-        <p>&copy; {new Date().getFullYear()} {business.name}. All rights reserved.</p>
+        <p>
+          &copy; {new Date().getFullYear()} {business.name}. All rights reserved.
+        </p>
       </div>
     </footer>
-  )
+  );
 }
 
-export default Footer
+export default Footer;

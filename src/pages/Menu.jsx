@@ -1,16 +1,17 @@
-import Card from '../components/Card'
-import menu from '../data/menu.json'
-import { formatPrice } from '../utils/formatPrice'
-import './Menu.css'
+import Card from '../components/Card';
+import menu from '../data/menu.json';
+import { formatPrice } from '../utils/formatPrice';
+import './Menu.css';
 
-const categories = ['Coffee', 'Pastries', 'Breakfast', 'Lunch']
+const categories = ['Coffee', 'Pastries', 'Breakfast', 'Lunch'];
 
 function Menu() {
   return (
     <div className="container page">
       <h1>Our Menu</h1>
       <p className="lead">
-        Everything is baked or cooked on site. Please let us know about any allergies when you order.
+        Everything is baked or cooked on site. Please let us know about any allergies when you
+        order.
       </p>
 
       {categories.map((category) => (
@@ -28,7 +29,7 @@ function Menu() {
         </section>
       ))}
     </div>
-  )
+  );
 }
 
-export default Menu
+export default Menu;

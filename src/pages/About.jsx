@@ -1,5 +1,5 @@
-import { business } from '../data/business'
-import './About.css'
+import { business } from '../data/business';
+import './About.css';
 
 function About() {
   return (
@@ -14,9 +14,10 @@ function About() {
             relit it on our first morning and it hasn't gone out since.
           </p>
           <p>
-            Every loaf and pastry is baked on site before sunrise, and our coffee is roasted in small
-            batches by a roaster two streets away. We believe a good café should feel like a second
-            kitchen: somewhere to linger, catch up with friends, or enjoy a quiet moment on your own.
+            Every loaf and pastry is baked on site before sunrise, and our coffee is roasted in
+            small batches by a roaster two streets away. We believe a good café should feel like a
+            second kitchen: somewhere to linger, catch up with friends, or enjoy a quiet moment on
+            your own.
           </p>
           <p>
             Today we are a team of eleven bakers, cooks and baristas, and we still know most of our
@@ -45,7 +46,7 @@ function About() {
         </aside>
       </div>
     </div>
-  )
+  );
 }
 
-export default About
+export default About;

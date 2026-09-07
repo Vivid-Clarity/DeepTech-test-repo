@@ -1,12 +1,12 @@
-import { Link, NavLink } from 'react-router-dom'
-import './Nav.css'
+import { Link, NavLink } from 'react-router-dom';
+import './Nav.css';
 
 const links = [
   { to: '/', label: 'Home' },
   { to: '/menu', label: 'Menu' },
   { to: '/about', label: 'About' },
   { to: '/contact', label: 'Contact' },
-]
+];
 
 function Nav() {
   return (
@@ -31,7 +31,7 @@ function Nav() {
         </nav>
       </div>
     </header>
-  )
+  );
 }
 
-export default Nav
+export default Nav;

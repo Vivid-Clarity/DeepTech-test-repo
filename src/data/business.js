@@ -11,4 +11,4 @@ export const business = {
     { days: 'Saturday', time: '8:00 am – 3:00 pm' },
     { days: 'Sunday', time: '8:00 am – 2:00 pm' },
   ],
-}
+};

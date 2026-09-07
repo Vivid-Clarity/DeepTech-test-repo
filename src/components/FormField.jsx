@@ -1,5 +1,5 @@
 function FormField({ id, label, error, optional = false, as: Input = 'input', ...inputProps }) {
-  const errorId = `${id}-error`
+  const errorId = `${id}-error`;
 
   return (
     <div className="form-field">
@@ -19,7 +19,7 @@ function FormField({ id, label, error, optional = false, as: Input = 'input', ..
         </p>
       )}
     </div>
-  )
+  );
 }
 
-export default FormField
+export default FormField;

@@ -1,50 +1,50 @@
-import { useState } from 'react'
-import FormField from '../components/FormField'
-import './Contact.css'
+import { useState } from 'react';
+import FormField from '../components/FormField';
+import './Contact.css';
 
-const emptyForm = { name: '', email: '', phone: '', message: '' }
+const emptyForm = { name: '', email: '', phone: '', message: '' };
 
 function validate(values) {
-  const errors = {}
+  const errors = {};
   if (!values.name.trim()) {
-    errors.name = 'Please enter your name.'
+    errors.name = 'Please enter your name.';
   }
   if (!values.email.trim()) {
-    errors.email = 'Please enter your email address.'
+    errors.email = 'Please enter your email address.';
   } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(values.email.trim())) {
-    errors.email = 'Please enter a valid email address, like name@example.com.'
+    errors.email = 'Please enter a valid email address, like name@example.com.';
   }
   if (values.phone.trim() && !/^[0-9+()\s-]{8,20}$/.test(values.phone.trim())) {
-    errors.phone = 'Please enter a valid phone number, or leave this field blank.'
+    errors.phone = 'Please enter a valid phone number, or leave this field blank.';
   }
   if (!values.message.trim()) {
-    errors.message = 'Please enter a message.'
+    errors.message = 'Please enter a message.';
   } else if (values.message.trim().length < 10) {
-    errors.message = 'Your message should be at least 10 characters long.'
+    errors.message = 'Your message should be at least 10 characters long.';
   }
-  return errors
+  return errors;
 }
 
 function Contact() {
-  const [values, setValues] = useState(emptyForm)
-  const [errors, setErrors] = useState({})
-  const [submitted, setSubmitted] = useState(false)
+  const [values, setValues] = useState(emptyForm);
+  const [errors, setErrors] = useState({});
+  const [submitted, setSubmitted] = useState(false);
 
   function handleChange(event) {
-    const { name, value } = event.target
-    setValues((current) => ({ ...current, [name]: value }))
+    const { name, value } = event.target;
+    setValues((current) => ({ ...current, [name]: value }));
     if (errors[name]) {
-      setErrors((current) => ({ ...current, [name]: undefined }))
+      setErrors((current) => ({ ...current, [name]: undefined }));
     }
   }
 
   function handleSubmit(event) {
-    event.preventDefault()
-    const found = validate(values)
-    setErrors(found)
+    event.preventDefault();
+    const found = validate(values);
+    setErrors(found);
     if (Object.keys(found).length === 0) {
-      setSubmitted(true)
-      setValues(emptyForm)
+      setSubmitted(true);
+      setValues(emptyForm);
     }
   }
 
@@ -60,7 +60,11 @@ function Contact() {
         <div className="form-success" role="status">
           <h2>Thanks for getting in touch!</h2>
           <p>We've received your message and will reply as soon as we can.</p>
-          <button type="button" className="button button-secondary" onClick={() => setSubmitted(false)}>
+          <button
+            type="button"
+            className="button button-secondary"
+            onClick={() => setSubmitted(false)}
+          >
             Send another message
           </button>
         </div>
@@ -112,7 +116,7 @@ function Contact() {
         </form>
       )}
     </div>
-  )
+  );
 }
 
-export default Contact
+export default Contact;
