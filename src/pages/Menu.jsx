@@ -1,11 +1,18 @@
+import { useState } from 'react';
 import Card from '../components/Card';
 import menu from '../data/menu.json';
 import { formatPrice } from '../utils/formatPrice';
 import './Menu.css';
 
 const categories = ['Coffee', 'Pastries', 'Breakfast', 'Lunch'];
+const filters = ['All', ...categories];
 
 function Menu() {
+  const [activeFilter, setActiveFilter] = useState('All');
+
+  const visibleCategories =
+    activeFilter === 'All' ? categories : categories.filter((c) => c === activeFilter);
+
   return (
     <div className="container page">
       <h1>Our Menu</h1>
@@ -14,7 +21,21 @@ function Menu() {
         order.
       </p>
 
-      {categories.map((category) => (
+      <div className="menu-filters" role="group" aria-label="Filter menu by category">
+        {filters.map((filter) => (
+          <button
+            key={filter}
+            type="button"
+            className={filter === activeFilter ? 'filter-button active' : 'filter-button'}
+            aria-pressed={filter === activeFilter}
+            onClick={() => setActiveFilter(filter)}
+          >
+            {filter}
+          </button>
+        ))}
+      </div>
+
+      {visibleCategories.map((category) => (
         <section key={category} className="menu-category">
           <h2>{category}</h2>
           <div className="menu-grid">
