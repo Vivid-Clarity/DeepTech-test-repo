@@ -2,7 +2,7 @@ import { Link, NavLink } from 'react-router-dom';
 import './Nav.css';
 
 const links = [
-  { to: '/', label: 'Home' },
+  { to: '/', label: 'Home', end: true },
   { to: '/menu', label: 'Menu' },
   { to: '/about', label: 'About' },
   { to: '/contact', label: 'Contact' },
@@ -21,6 +21,7 @@ function Nav() {
               <li key={link.to}>
                 <NavLink
                   to={link.to}
+                  end={link.end}
                   className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}
                 >
                   {link.label}
