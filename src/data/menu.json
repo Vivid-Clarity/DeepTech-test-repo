@@ -10,14 +10,14 @@
     "id": "flat-white",
     "name": "Flat White",
     "description": "Silky steamed milk over a double ristretto.",
-    "price": 4.8,
+    "price": 5.0,
     "category": "Coffee"
   },
   {
     "id": "oat-latte",
     "name": "Oat Latte",
     "description": "Our house blend with creamy oat milk.",
-    "price": 5.2,
+    "price": 5.5,
     "category": "Coffee"
   },
   {
@@ -31,7 +31,7 @@
     "id": "croissant",
     "name": "Butter Croissant",
     "description": "Flaky, golden and laminated by hand every morning.",
-    "price": 4.5,
+    "price": 4.8,
     "category": "Pastries",
     "featured": true
   },
@@ -75,7 +75,7 @@
     "id": "big-breakfast",
     "name": "Ember Breakfast Plate",
     "description": "Eggs your way, bacon, mushrooms, tomato and toast.",
-    "price": 22.0,
+    "price": 23.5,
     "category": "Breakfast"
   },
   {
