@@ -1,0 +1,109 @@
+.booking-steps {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  margin: 2rem 0 1.5rem;
+  padding: 0;
+}
+
+.booking-step {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-muted);
+}
+
+.booking-step-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.9rem;
+  height: 1.9rem;
+  border-radius: 50%;
+  border: 2px solid var(--color-border);
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.booking-step.current {
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+.booking-step.current .booking-step-number {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.booking-step.done .booking-step-number {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #fff;
+}
+
+.booking-panel {
+  max-width: 34rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 1.75rem;
+}
+
+.booking-panel h2 {
+  margin: 0 0 1.25rem;
+  font-size: 1.4rem;
+}
+
+.step-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.hint {
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  margin-top: -0.5rem;
+}
+
+.booking-summary {
+  margin: 0 0 1.5rem;
+}
+
+.booking-summary div {
+  display: grid;
+  grid-template-columns: 9rem 1fr;
+  gap: 1rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.booking-summary dt {
+  font-weight: 600;
+}
+
+.booking-summary dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.booking-confirmed {
+  max-width: 40rem;
+}
+
+.booking-confirmed h1 {
+  margin-top: 0;
+}
+
+@media (max-width: 480px) {
+  .booking-panel {
+    padding: 1.25rem;
+  }
+
+  .booking-summary div {
+    grid-template-columns: 1fr;
+    gap: 0.1rem;
+  }
+}
