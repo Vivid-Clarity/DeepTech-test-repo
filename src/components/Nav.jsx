@@ -7,6 +7,7 @@ const links = [
   { to: '/menu', label: 'Menu' },
   { to: '/about', label: 'About' },
   { to: '/contact', label: 'Contact' },
+  { to: '/book', label: 'Book a Table' },
 ];
 
 function Nav() {

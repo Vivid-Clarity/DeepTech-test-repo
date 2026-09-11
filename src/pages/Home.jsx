@@ -32,6 +32,18 @@ function Home() {
           ))}
         </div>
       </section>
+
+      <section className="cta-band">
+        <div className="container cta-inner">
+          <div>
+            <h2>Planning a visit?</h2>
+            <p>Book ahead for weekend brunch or groups, and we'll have your table ready.</p>
+          </div>
+          <Link to="/book" className="button">
+            Reserve a table
+          </Link>
+        </div>
+      </section>
     </>
   );
 }
