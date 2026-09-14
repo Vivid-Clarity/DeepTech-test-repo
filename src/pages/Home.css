@@ -56,3 +56,48 @@
   margin: 0;
   color: var(--color-muted);
 }
+
+.testimonials {
+  padding: 3.5rem 0 4rem;
+  background: #f3e6d3;
+}
+
+.testimonials h2 {
+  font-size: 2rem;
+  margin: 0 0 1.5rem;
+  text-align: center;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+
+.testimonial {
+  margin: 0;
+  background: var(--color-surface);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(43, 37, 34, 0.06);
+}
+
+.testimonial blockquote {
+  margin: 0 0 1rem;
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+.testimonial blockquote p {
+  margin: 0;
+}
+
+.testimonial figcaption {
+  font-weight: 600;
+}
+
+.testimonial figcaption span {
+  font-weight: 400;
+  color: var(--color-muted);
+}
