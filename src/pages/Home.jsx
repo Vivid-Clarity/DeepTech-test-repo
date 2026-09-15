@@ -6,24 +6,6 @@ import './Home.css';
 
 const featured = menu.filter((item) => item.featured);
 
-const testimonials = [
-  {
-    quote: 'The croissants are the best I have had outside of Paris. I come in every Saturday.',
-    name: 'Hazel P.',
-    detail: 'regular since 2018',
-  },
-  {
-    quote: 'Friendly staff, great coffee and they always remember my order. Feels like home.',
-    name: 'Tom R.',
-    detail: 'local resident',
-  },
-  {
-    quote: 'We booked a table for eight for a birthday brunch and the team made it so easy.',
-    name: 'Aisha K.',
-    detail: 'first-time visitor',
-  },
-];
-
 function Home() {
   return (
     <>
@@ -48,24 +30,6 @@ function Home() {
               {item.description}
             </Card>
           ))}
-        </div>
-      </section>
-
-      <section className="testimonials">
-        <div className="container">
-          <h2>What our customers say</h2>
-          <div className="testimonial-grid">
-            {testimonials.map((t) => (
-              <figure key={t.name} className="testimonial">
-                <blockquote>
-                  <p>&ldquo;{t.quote}&rdquo;</p>
-                </blockquote>
-                <figcaption>
-                  {t.name}, <span>{t.detail}</span>
-                </figcaption>
-              </figure>
-            ))}
-          </div>
         </div>
       </section>
 
