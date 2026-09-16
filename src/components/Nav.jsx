@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
+import ThemeToggle from './ThemeToggle';
 import './Nav.css';
 
 const links = [
@@ -35,22 +36,6 @@ function Nav() {
         <Link to="/" className="brand">
           Ember &amp; Oak
         </Link>
-        <button
-          type="button"
-          className={menuOpen ? 'nav-toggle open' : 'nav-toggle'}
-          aria-expanded={menuOpen}
-          aria-controls="main-nav"
-          onClick={() => setMenuOpen((open) => !open)}
-        >
-          <span className="nav-toggle-bars" aria-hidden="true">
-            <span />
-            <span />
-            <span />
-          </span>
-          <span className="visually-hidden">
-            {menuOpen ? 'Close navigation' : 'Open navigation'}
-          </span>
-        </button>
         <nav id="main-nav" aria-label="Main" className={menuOpen ? 'main-nav open' : 'main-nav'}>
           <ul className="nav-links">
             {links.map((link) => (
@@ -66,6 +51,25 @@ function Nav() {
             ))}
           </ul>
         </nav>
+        <div className="nav-actions">
+          <ThemeToggle />
+          <button
+            type="button"
+            className={menuOpen ? 'nav-toggle open' : 'nav-toggle'}
+            aria-expanded={menuOpen}
+            aria-controls="main-nav"
+            onClick={() => setMenuOpen((open) => !open)}
+          >
+            <span className="nav-toggle-bars" aria-hidden="true">
+              <span />
+              <span />
+              <span />
+            </span>
+            <span className="visually-hidden">
+              {menuOpen ? 'Close navigation' : 'Open navigation'}
+            </span>
+          </button>
+        </div>
       </div>
     </header>
   );

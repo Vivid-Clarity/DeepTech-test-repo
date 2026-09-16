@@ -10,6 +10,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 1rem;
   height: 64px;
 }
 
@@ -19,6 +20,7 @@
   font-weight: 700;
   color: var(--color-text);
   text-decoration: none;
+  margin-right: auto;
 }
 
 .nav-links {
@@ -45,6 +47,33 @@
 .nav-link.active {
   background: var(--color-primary);
   color: #fff;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  height: 40px;
+  padding: 0 0.8rem;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.theme-toggle:hover {
+  border-color: var(--color-primary);
 }
 
 .nav-toggle {
@@ -90,7 +119,7 @@
   transform: translateY(-7px) rotate(-45deg);
 }
 
-@media (max-width: 720px) {
+@media (max-width: 900px) {
   .nav-inner {
     position: relative;
   }
@@ -121,5 +150,23 @@
 
   .nav-link {
     padding: 0.75rem 1rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .theme-toggle {
+    width: 40px;
+    padding: 0;
+    justify-content: center;
+  }
+
+  /* Icon only on small phones; the label stays available to screen readers */
+  .theme-toggle span {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
   }
 }

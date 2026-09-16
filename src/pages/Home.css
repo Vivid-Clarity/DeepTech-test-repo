@@ -1,5 +1,5 @@
 .hero {
-  background: linear-gradient(135deg, #f3e6d3 0%, #e7cfb0 100%);
+  background: linear-gradient(135deg, var(--hero-from) 0%, var(--hero-to) 100%);
   padding: 5.5rem 0;
   text-align: center;
 }

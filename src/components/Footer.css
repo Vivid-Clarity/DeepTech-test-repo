@@ -1,5 +1,5 @@
 .site-footer {
-  background: #2b2522;
+  background: var(--footer-bg);
   color: #e9e1d8;
   padding-top: 2.5rem;
   font-size: 0.95rem;
