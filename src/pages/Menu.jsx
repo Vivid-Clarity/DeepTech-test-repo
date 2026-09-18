@@ -2,12 +2,15 @@ import { useState } from 'react';
 import Card from '../components/Card';
 import menu from '../data/menu.json';
 import { formatPrice } from '../utils/formatPrice';
+import { usePageTitle } from '../hooks/usePageTitle';
 import './Menu.css';
 
 const categories = ['Coffee', 'Pastries', 'Breakfast', 'Lunch'];
 const filters = ['All', ...categories];
 
 function Menu() {
+  usePageTitle('Menu');
+
   const [activeFilter, setActiveFilter] = useState('All');
 
   const visibleCategories =

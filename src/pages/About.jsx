@@ -1,7 +1,10 @@
 import { business } from '../data/business';
+import { usePageTitle } from '../hooks/usePageTitle';
 import './About.css';
 
 function About() {
+  usePageTitle('About');
+
   return (
     <div className="container page">
       <h1>About Ember &amp; Oak</h1>

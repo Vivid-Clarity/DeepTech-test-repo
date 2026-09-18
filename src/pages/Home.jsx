@@ -2,11 +2,14 @@ import { Link } from 'react-router-dom';
 import Card from '../components/Card';
 import menu from '../data/menu.json';
 import { formatPrice } from '../utils/formatPrice';
+import { usePageTitle } from '../hooks/usePageTitle';
 import './Home.css';
 
 const featured = menu.filter((item) => item.featured);
 
 function Home() {
+  usePageTitle();
+
   return (
     <>
       <section className="hero">

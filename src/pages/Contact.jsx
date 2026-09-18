@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import FormField from '../components/FormField';
+import { usePageTitle } from '../hooks/usePageTitle';
 import './Contact.css';
 
 const emptyForm = { name: '', email: '', phone: '', message: '' };
@@ -26,6 +27,8 @@ function validate(values) {
 }
 
 function Contact() {
+  usePageTitle('Contact');
+
   const [values, setValues] = useState(emptyForm);
   const [errors, setErrors] = useState({});
   const [submitted, setSubmitted] = useState(false);

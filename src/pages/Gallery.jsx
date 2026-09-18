@@ -1,8 +1,11 @@
 import { useEffect, useRef, useState } from 'react';
 import { galleryImages } from '../data/gallery';
+import { usePageTitle } from '../hooks/usePageTitle';
 import './Gallery.css';
 
 function Gallery() {
+  usePageTitle('Gallery');
+
   const [selected, setSelected] = useState(null);
   const closeButtonRef = useRef(null);
   const lastTriggerRef = useRef(null);

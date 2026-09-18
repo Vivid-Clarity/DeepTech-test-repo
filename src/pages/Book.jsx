@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import FormField from '../components/FormField';
 import { business } from '../data/business';
+import { usePageTitle } from '../hooks/usePageTitle';
 import './Book.css';
 
 const steps = ['Date & time', 'Party size', 'Your details', 'Confirm'];
@@ -62,6 +63,8 @@ function validateStep(step, booking) {
 }
 
 function Book() {
+  usePageTitle('Book a Table');
+
   const [step, setStep] = useState(1);
   const [booking, setBooking] = useState(emptyBooking);
   const [errors, setErrors] = useState({});
