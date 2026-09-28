@@ -33,6 +33,31 @@
   color: #fff;
 }
 
+.open-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  text-transform: none;
+  letter-spacing: normal;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.open-status-dot {
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.open-status.open {
+  color: #7fd97f;
+}
+
+.open-status.closed {
+  color: #e08a7d;
+}
+
 .footer-hours {
   margin: 0;
 }

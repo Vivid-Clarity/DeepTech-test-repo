@@ -1,4 +1,5 @@
 import { business } from '../data/business';
+import OpenStatus from './OpenStatus';
 import './Footer.css';
 
 function Footer() {
@@ -14,7 +15,9 @@ function Footer() {
           </address>
         </div>
         <div className="footer-col">
-          <h2 className="footer-heading">Opening hours</h2>
+          <h2 className="footer-heading">
+            Opening hours <OpenStatus />
+          </h2>
           <dl className="footer-hours">
             {business.hours.map((row) => (
               <div key={row.days}>
